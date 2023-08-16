@@ -1,0 +1,14 @@
+<div class="container"><ul>
+<% @restaurants.each do |restaurant| %>
+    <li>
+      <%= restaurant.name %>
+      <p>
+      <%= link_to "Show this restaurant", restaurant, :class => "btn btn-primary" %>
+      </p>
+    </li>
+  <% end %>
+</ul>
+<br>
+  <%= link_to "Create new restaurant", new_restaurant_url, :class => "btn btn-primary" %>
+
+</div>
